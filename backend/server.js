@@ -14,8 +14,6 @@ const proizvodiRoutes = require('./routes/proizvodi')
 app.use(cors())
 app.use(express.json())
 
-app.use('/images', express.static(path.join(__dirname, 'public/images')))
-
 app.use('/api/proizvodi', proizvodiRoutes)
 
 app.listen(port, () => {
